@@ -31,4 +31,12 @@ section {
     object-fit: cover;
     padding: 0;
   }
+
+  #actual-video {
+    z-index: -1;
+  }
+
+  h1{
+    z-index: 1;
+  }
 }
