@@ -1,23 +1,23 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import "bourbon/bourbon";
+@import "base/base";
+@import "neat/neat";
 
-section {
+$desktop: new-breakpoint(min-width 769px max-width 3024px 12);
+$tablet: new-breakpoint(min-width 481px max-width 768px 12);
+$mobile: new-breakpoint(min-width 240px max-width 480px 4);
 
-  #video-background {
-  /*  making the video fullscreen  */
+
+#background-video {
+  @include media($mobile) {
+    display: none;
+  }
+
+  @include media($tablet) {
+    display: none;
+  }
+
+  @include media($desktop) {
+    /*  making the video fullscreen  */
     position: absolute;
     display: block;
     top: 0;
@@ -31,12 +31,44 @@ section {
     object-fit: cover;
     padding: 0;
   }
+}
 
-  #actual-video {
+#fallback-image {
+
+  @include media($mobile) {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: auto;
+    width: initial;
+    height: 33%;
     z-index: -1;
+    margin: 0 auto;
+    object-fit: cover;
+    padding: 0;
   }
 
-  h1{
-    z-index: 1;
+  @include media($tablet) {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: auto;
+    width: initial;
+    height: 33%;
+    z-index: -1;
+    margin: 0 auto;
+    object-fit: cover;
+    padding: 0;
+  }
+
+  @include media($desktop) {
+    display: none;
   }
 }
+
+
+
