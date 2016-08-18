@@ -15,9 +15,12 @@
 //= require turbolinks
 //= require_tree .
 
-if ($( "body" ).hasClass( "touch_device" )) {
-  alert("mobile detected");
-} else {
-  alert("computer detected");
-}
+$( document ).ready(function() {
+  if ($("body").hasClass( "computer" )) {
+    alert("computer detected");
+  }
+  else {
+    alert("mobile detected");
+  }
+});
 
