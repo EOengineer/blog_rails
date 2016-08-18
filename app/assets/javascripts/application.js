@@ -17,10 +17,12 @@
 
 $( document ).ready(function() {
   if ($("body").hasClass( "computer" )) {
-    alert("computer detected");
+    $("#background-video").show();
+    $("#fallback-image").hide();
   }
   else {
-    alert("mobile detected");
+    $("#background-video").hide();
+    $("#fallback-image").show();
   }
 });
 

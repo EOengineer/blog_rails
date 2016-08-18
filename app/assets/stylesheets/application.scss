@@ -8,17 +8,17 @@ $mobile: new-breakpoint(min-width 240px max-width 480px 4);
 
 
 #background-video {
-  @include media($mobile) {
-    display: none;
-    visibility: hidden;
-  }
+  // @include media($mobile) {
+  //   display: none;
+  //   visibility: hidden;
+  // }
 
-  @include media($tablet) {
-    display: none;
-    visibility: hidden;
-  }
+  // @include media($tablet) {
+  //   display: none;
+  //   visibility: hidden;
+  // }
 
-  @include media($desktop) {
+  // @include media($desktop) {
     /*  making the video fullscreen  */
     position: absolute;
     display: block;
@@ -32,13 +32,29 @@ $mobile: new-breakpoint(min-width 240px max-width 480px 4);
     margin: 0 auto;
     object-fit: cover;
     padding: 0;
-    visibility: visible;
-  }
+    // visibility: visible;
+  // }
 }
 
 #fallback-image {
 
-  @include media($mobile) {
+  // @include media($mobile) {
+  //   position: absolute;
+  //   display: block;
+  //   top: 0;
+  //   left: 0;
+  //   min-width: 100%;
+  //   min-height: auto;
+  //   width: initial;
+  //   height: 33%;
+  //   z-index: -1;
+  //   margin: 0 auto;
+  //   object-fit: cover;
+  //   padding: 0;
+  //   visibility: visible;
+  // }
+
+  // @include media($tablet) {
     position: absolute;
     display: block;
     top: 0;
@@ -51,29 +67,13 @@ $mobile: new-breakpoint(min-width 240px max-width 480px 4);
     margin: 0 auto;
     object-fit: cover;
     padding: 0;
-    visibility: visible;
-  }
+  //   visibility: visible;
+  // }
 
-  @include media($tablet) {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: auto;
-    width: initial;
-    height: 33%;
-    z-index: -1;
-    margin: 0 auto;
-    object-fit: cover;
-    padding: 0;
-    visibility: visible;
-  }
-
-  @include media($desktop) {
-    display: none;
-    visibility: hidden;
-  }
+  // @include media($desktop) {
+  //   display: none;
+  //   visibility: hidden;
+  // }
 }
 
 
