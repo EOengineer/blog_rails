@@ -29,6 +29,9 @@ gem 'neat'
 gem 'bitters'
 gem 'refills'
 
+# for browser detection
+gem "browser"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

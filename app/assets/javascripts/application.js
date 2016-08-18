@@ -14,3 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+if ($( "body" ).hasClass( "touch_device" )) {
+  alert("mobile detected");
+} else {
+  alert("computer detected");
+}
+

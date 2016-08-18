@@ -10,10 +10,12 @@ $mobile: new-breakpoint(min-width 240px max-width 480px 4);
 #background-video {
   @include media($mobile) {
     display: none;
+    visibility: hidden;
   }
 
   @include media($tablet) {
     display: none;
+    visibility: hidden;
   }
 
   @include media($desktop) {
@@ -30,6 +32,7 @@ $mobile: new-breakpoint(min-width 240px max-width 480px 4);
     margin: 0 auto;
     object-fit: cover;
     padding: 0;
+    visibility: visible;
   }
 }
 
@@ -48,6 +51,7 @@ $mobile: new-breakpoint(min-width 240px max-width 480px 4);
     margin: 0 auto;
     object-fit: cover;
     padding: 0;
+    visibility: visible;
   }
 
   @include media($tablet) {
@@ -63,10 +67,12 @@ $mobile: new-breakpoint(min-width 240px max-width 480px 4);
     margin: 0 auto;
     object-fit: cover;
     padding: 0;
+    visibility: visible;
   }
 
   @include media($desktop) {
     display: none;
+    visibility: hidden;
   }
 }
 
