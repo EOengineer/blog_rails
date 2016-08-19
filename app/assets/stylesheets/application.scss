@@ -6,6 +6,12 @@ $desktop: new-breakpoint(min-width 769px max-width 3024px 12);
 $tablet: new-breakpoint(min-width 481px max-width 768px 12);
 $mobile: new-breakpoint(min-width 240px max-width 480px 4);
 
+.background-video {
+  h1 {
+      z-index: -10;
+      color: white;
+  }
+}
 
 #background-video {
     position: absolute;
@@ -35,13 +41,6 @@ $mobile: new-breakpoint(min-width 240px max-width 480px 4);
     margin: 0 auto;
     object-fit: cover;
     padding: 0;
-}
-
-
-
-h1 {
-  z-index: -10;
-  color: white;
 }
 
 
