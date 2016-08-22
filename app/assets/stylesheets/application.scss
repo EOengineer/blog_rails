@@ -2,46 +2,28 @@
 @import "base/base";
 @import "neat/neat";
 
-$desktop: new-breakpoint(min-width 769px max-width 3024px 12);
-$tablet: new-breakpoint(min-width 481px max-width 768px 12);
+$large-screen: 53.75em !default;
+$medium-screen: 40em !default;
+
+// media query breakpoints
+$desktop: new-breakpoint(min-width 1100px max-width 3024px 12);
+$horizontal-bar-mode: $large-screen;
+$tablet: new-breakpoint(min-width 481px max-width 1100px 12);
 $mobile: new-breakpoint(min-width 240px max-width 480px 4);
 
-.background-video {
-  h1 {
-      z-index: -10;
-      color: white;
-  }
-}
 
-#background-video {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: auto;
-    width: initial;
-    height: 30%;
-    z-index: -1;
-    margin: 0 auto;
-    object-fit: cover;
-    padding: 0;
-}
+// site wide styling variables
+$navigation-height: 60px;
 
-#fallback-image {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: auto;
-    width: initial;
-    height: 33%;
-    z-index: -1;
-    margin: 0 auto;
-    object-fit: cover;
-    padding: 0;
-}
+body { margin: 0; }
+
+@import "nav";
+@import "home";
+@import "footer";
+
+
+
+
 
 
 

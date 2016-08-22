@@ -1,0 +1,70 @@
+$background-video-height: 30%;
+$blog-hero-text: 2em;
+
+.background-video {
+  h1 {
+    @include media ($mobile) {
+        // color: blue;
+    }
+
+    @include media ($tablet) {
+        // color: red;
+    }
+
+    @include media ($horizontal-bar-mode) {
+        // color: green;
+    }
+      font-size: $blog-hero-text;
+      z-index: -10;
+      color: white;
+      text-align: center;
+      margin-top: ($background-video-height / 2);
+  }
+}
+
+#background-video {
+    @include media ($mobile) {
+        top: $navigation-height * 2 + 1px;
+        height: 81%;
+    }
+
+    @include media ($tablet) {
+        top: $navigation-height * 2 + 1px;
+        height: 81%;
+    }
+
+    @include media ($horizontal-bar-mode) {
+        top: $navigation-height;
+        height: 91%;
+    }
+
+    position: absolute;
+    display: block;
+    top: $navigation-height;
+    left: 0;
+    min-width: 100%;
+    min-height: auto;
+    width: initial;
+    height: 80%;
+    z-index: -1;
+    margin: 0 auto;
+    object-fit: cover;
+    padding: 0;
+
+
+}
+
+#fallback-image {
+    position: absolute;
+    display: block;
+    top: $navigation-height;
+    left: 0;
+    min-width: 100%;
+    min-height: auto;
+    width: initial;
+    height: 33%;
+    z-index: -1;
+    margin: 0 auto;
+    object-fit: cover;
+    padding: 0;
+}
