@@ -2,40 +2,46 @@ $background-video-height: 30%;
 $blog-hero-text: 2em;
 
 .background-video {
-  h1 {
-    @include media ($mobile) {
-        // color: blue;
-    }
-
-    @include media ($tablet) {
-        // color: red;
-    }
-
-    @include media ($horizontal-bar-mode) {
-        // color: green;
-    }
-      font-size: $blog-hero-text;
+  h1, h5 {
       z-index: -10;
       color: white;
       text-align: center;
-      margin-top: ($background-video-height / 2);
+      font-weight: 400;
+  }
+
+  h1 {
+    font-size: $blog-hero-text;
+    margin-top: ($background-video-height / 2);
+  }
+
+  h5 {
+    margin: 0 auto;
+    width: 220px;
+    font-size: $blog-hero-text / 2;
+    border-top: 1px solid white;
+    padding-top: 20px;
   }
 }
 
 #background-video {
     @include media ($mobile) {
         top: $navigation-height * 2 + 1px;
-        height: 81%;
+        height: 91%;
     }
 
     @include media ($tablet) {
         top: $navigation-height * 2 + 1px;
-        height: 81%;
+        height: 91%;
     }
 
-    @include media ($horizontal-bar-mode) {
+    @include media ($desktop) {
         top: $navigation-height;
-        height: 91%;
+        height: 100%;
+    }
+
+    @include media ($desktop-hd) {
+        top: $navigation-height;
+        height: 100%;
     }
 
     position: absolute;

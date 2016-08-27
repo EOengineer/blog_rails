@@ -1,25 +1,22 @@
+// This is the site's main style manifest.
+// Please keep it tidy and neat : )
+
+
+
+// foundational styling packages
 @import "bourbon/bourbon";
 @import "base/base";
 @import "neat/neat";
 
-$large-screen: 53.75em !default;
-$medium-screen: 40em !default;
 
-// media query breakpoints
-$desktop: new-breakpoint(min-width 1100px max-width 3024px 12);
-$horizontal-bar-mode: $large-screen;
-$tablet: new-breakpoint(min-width 481px max-width 1100px 12);
-$mobile: new-breakpoint(min-width 240px max-width 480px 4);
+// variables used throughout codebase
+@import "top_level_variables";
 
 
-// site wide styling variables
-$navigation-height: 60px;
+// site styling
+@import "shared/base";
+@import "front_end/base";
 
-body { margin: 0; }
-
-@import "nav";
-@import "home";
-@import "footer";
 
 
 
