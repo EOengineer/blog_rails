@@ -1,48 +1,26 @@
+// This is the site's main style manifest.
+// Please keep it tidy and neat : )
+
+
+
+// foundational styling packages
 @import "bourbon/bourbon";
 @import "base/base";
 @import "neat/neat";
 
-$desktop: new-breakpoint(min-width 769px max-width 3024px 12);
-$tablet: new-breakpoint(min-width 481px max-width 768px 12);
-$mobile: new-breakpoint(min-width 240px max-width 480px 4);
+
+// variables used throughout codebase
+@import "top_level_variables";
 
 
-#background-video {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: auto;
-    width: initial;
-    height: 30%;
-    z-index: -1;
-    margin: 0 auto;
-    object-fit: cover;
-    padding: 0;
-}
-
-#fallback-image {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: auto;
-    width: initial;
-    height: 33%;
-    z-index: -1;
-    margin: 0 auto;
-    object-fit: cover;
-    padding: 0;
-}
+// site styling
+@import "shared/base";
+@import "front_end/base";
 
 
 
-h1 {
-  z-index: -10;
-  color: white;
-}
+
+
 
 
 

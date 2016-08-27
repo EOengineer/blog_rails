@@ -8,7 +8,10 @@
 </head>
 <body class=<%= browser.device.mobile? ? "touch-device" : "computer" %>>
 
+<%= render "shared/nav" %>
+
 <%= yield %>
 
+<%= render "shared/footer" %>
 </body>
 </html>
