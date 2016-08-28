@@ -2,7 +2,13 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  get 'posts/:id' => 'posts#show'
+  get 'blog' => 'welcome#blog'
+  get 'about' => 'welcome#about'
+  get 'portfolio' => 'welcome#portfolio'
+  get 'contact' => 'welcome#contact'
+
+  get 'posts' => 'posts#index'
+  get 'posts/:slug' => 'posts#show'
 
   namespace :admin do
     resources :posts

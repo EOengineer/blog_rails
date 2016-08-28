@@ -9,6 +9,23 @@ $blog-hero-text: 2em;
       font-weight: 400;
   }
 
+  .enter-container {
+
+    div {
+      width: 100px;
+      border: 1px solid $font-color;
+      border-radius: 5px;
+      margin: 0 auto;
+      margin-top: 30px;
+      padding: 10px;
+    }
+
+    div:hover {
+      border-color: gray;
+      background-color: black;
+    }
+  }
+
   h1 {
     font-size: $blog-hero-text;
     margin-top: ($background-video-height / 2);
@@ -18,8 +35,40 @@ $blog-hero-text: 2em;
     margin: 0 auto;
     width: 220px;
     font-size: $blog-hero-text / 2;
-    border-top: 1px solid white;
+    border-top: 1px solid $font-color;
     padding-top: 20px;
+  }
+
+  a {
+    color: $font-color;
+    display: block;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+  }
+
+  a:hover {
+    color: gray;
+  }
+
+  .bottom-arrow {
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      border-top: 20px solid $font-color;
+      margin-top: 30px;
+  }
+
+  .top-arrow {
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      border-bottom: 20px solid $font-color;
+  }
+
+  .enter-text {
+    position: relative;
+    left: -20px;
+    font-size: 18px;
+    margin-top: 0;
   }
 }
 
