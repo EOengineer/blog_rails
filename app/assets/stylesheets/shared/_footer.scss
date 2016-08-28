@@ -30,6 +30,22 @@
     display: none;
   }
 
+  @include media($mobile) {
+    @include span-columns(1 of $total_columns / $total_columns);
+  }
+
+  @include media($tablet) {
+    @include span-columns(4 of 4);
+  }
+
+  @include media($desktop) {
+    @include span-columns(12 of 12);
+  }
+
+  @include media($desktop-hd) {
+    @include span-columns(12 of 12);
+  }
+
   position: fixed;
   bottom: 0;
   $base-spacing: 1.5em !default;
@@ -44,7 +60,7 @@
   // background: $footer-background;
   display: inline-block;
   padding: $base-spacing;
-  width: 100%;
+  // width: 100%;
 
   .footer-logo {
     margin-bottom: 1em;
