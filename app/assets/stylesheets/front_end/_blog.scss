@@ -1,49 +1,32 @@
 
 
 
-$base-margin: 30px;
-
 
 // show page
-
 .blog-show {
+  @include screen-control;
   color: $font-color;
 
-  @include media($mobile) {
-    @include span-columns(1 of $total_columns / $total_columns);
-    padding: 20px;
-    // color: red;
-  }
-
-  @include media($tablet) {
-    @include span-columns(2 of 4);
-    @include shift(1);
-    // color: blue;
-  }
-
-  @include media($desktop) {
-    @include span-columns(6 of 12);
-    @include shift(3);
-    // color: green;
-  }
-
-  @include media($desktop-hd) {
-    @include span-columns(8 of 12);
-    @include shift(2);
-    // color: orange;
-  }
 
   section {
   }
 
   h1 {
-    margin-top: $base-margin;
-    margin-bottom: $base-margin;
     font-size: $font-size * 1.5;
+    margin-top: $base-margin;
+    margin-bottom: $base-margin / 2;
+  }
+
+  h5 {
+    font-size: $font-size * 1.2;
+    margin-top: $base-margin * 2;
+    margin-bottom: $base-margin;
   }
 
   p {
-    margin-bottom: $base-margin;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    // margin-bottom: $base-margin;
   }
 
   code {
@@ -52,9 +35,15 @@ $base-margin: 30px;
     padding: 20px;
     border-radius: 5px;
     border: 1px solid white;
+    margin-bottom: 10px;
   }
 
   code:hover {
     border: 1px solid blue;
+  }
+
+  .code-heading {
+    display: inline-block;
+    margin-top: $base-margin;
   }
 }

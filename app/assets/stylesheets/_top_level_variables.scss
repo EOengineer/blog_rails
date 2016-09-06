@@ -4,20 +4,55 @@ $medium-screen: 40em !default;
 $large-screen: 53.75em !default;
 
 
-// media query breakpoints
+// ################################## media query breakpoints #######################################
+
 $short-screen: new-breakpoint(min-height 1px max-height 650px); // used to hide footer for small screens
 $mobile: new-breakpoint(min-width 240px max-width 480px 4);
 $tablet: new-breakpoint(min-width 481px max-width 768px 12);
 $desktop: new-breakpoint(min-width 769px max-width 1200px 12);
 $desktop-hd: new-breakpoint(min-width 1201px max-width 4000px 12);
 
-// site wide styling variables
+// ################################## mixin used for responsive layout ###############################
+
+@mixin screen-control {
+  @include media($mobile) {
+    @include span-columns(1 of $total_columns / $total_columns);
+    padding: 20px;
+    // color: red;
+  }
+
+  @include media($tablet) {
+    @include span-columns(2 of 4);
+    @include shift(1);
+    // color: blue;
+  }
+
+  @include media($desktop) {
+    @include span-columns(6 of 12);
+    @include shift(3);
+    // color: green;
+  }
+
+  @include media($desktop-hd) {
+    @include span-columns(8 of 12);
+    @include shift(2);
+    // color: orange;
+  }
+}
+
+// ################################### site wide element variables #############################
+
 $navigation-height: 60px;
 
 
 // font related
 $font-size: 1em;
 $font-color: white;
+
+
+// border related
+$base-margin: 30px;
+
 
 body {
   @include margin(0);
