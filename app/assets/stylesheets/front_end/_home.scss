@@ -1,76 +1,76 @@
-// $background-video-height: 30%;
-// $blog-hero-text: 2em;
+$background-video-height: 30%;
+$blog-hero-text: 2em;
 
-// .background-video {
-//   h1, h5 {
-//       z-index: -10;
-//       color: white;
-//       text-align: center;
-//       font-weight: 400;
-//   }
+.background-video {
+  h1, h5 {
+      z-index: -10;
+      color: white;
+      text-align: center;
+      font-weight: 400;
+  }
 
-//   .enter-container {
+  .enter-container {
 
-//     div {
-//       width: 100px;
-//       border: 1px solid $font-color;
-//       border-radius: 5px;
-//       margin: 0 auto;
-//       margin-top: 30px;
-//       padding: 10px;
-//     }
+    div {
+      width: 100px;
+      border: 1px solid $font-color;
+      border-radius: 5px;
+      margin: 0 auto;
+      margin-top: 30px;
+      padding: 10px;
+    }
 
-//     div:hover {
-//       border-color: gray;
-//       background-color: black;
-//     }
-//   }
+    div:hover {
+      border-color: gray;
+      background-color: black;
+    }
+  }
 
-//   h1 {
-//     font-size: $blog-hero-text;
-//     margin-top: ($background-video-height / 2);
-//   }
+  h1 {
+    font-size: $blog-hero-text;
+    margin-top: ($background-video-height / 2);
+  }
 
-//   h5 {
-//     margin: 0 auto;
-//     width: 220px;
-//     font-size: $blog-hero-text / 2;
-//     border-top: 1px solid $font-color;
-//     padding-top: 20px;
-//   }
+  h5 {
+    margin: 0 auto;
+    width: 220px;
+    font-size: $blog-hero-text / 2;
+    border-top: 1px solid $font-color;
+    padding-top: 20px;
+  }
 
-//   a {
-//     color: $font-color;
-//     display: block;
-//     margin: 0 auto;
-//     width: 0;
-//     height: 0;
-//   }
+  a {
+    color: $font-color;
+    display: block;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+  }
 
-//   a:hover {
-//     color: gray;
-//   }
+  a:hover {
+    color: gray;
+  }
 
-//   .bottom-arrow {
-//       border-left: 40px solid transparent;
-//       border-right: 40px solid transparent;
-//       border-top: 20px solid $font-color;
-//       margin-top: 30px;
-//   }
+  .bottom-arrow {
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      border-top: 20px solid $font-color;
+      margin-top: 30px;
+  }
 
-//   .top-arrow {
-//       border-left: 40px solid transparent;
-//       border-right: 40px solid transparent;
-//       border-bottom: 20px solid $font-color;
-//   }
+  .top-arrow {
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+      border-bottom: 20px solid $font-color;
+  }
 
-//   .enter-text {
-//     position: relative;
-//     left: -20px;
-//     font-size: 18px;
-//     margin-top: 0;
-//   }
-// }
+  .enter-text {
+    position: relative;
+    left: -20px;
+    font-size: 18px;
+    margin-top: 0;
+  }
+}
 
 // #background-video {
 //     @include media ($mobile) {
@@ -173,7 +173,7 @@
 
 // }
 
-#background-video {
+#background-video, #fallback-image {
   position: fixed;
   top: 50%;
   left: 50%;

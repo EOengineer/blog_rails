@@ -19,8 +19,8 @@ header.navigation {
   $navigation-submenu-width: 12em;
   $horizontal-bar-mode: $large-screen;
 
-  background-color: $navigation-background;
-  border-bottom: 1px solid darken($navigation-background, 10);
+  // background-color: $navigation-background;
+  // border-bottom: 1px solid darken($navigation-background, 10);
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
@@ -32,6 +32,7 @@ header.navigation {
   }
 
   .logo {
+    width: 0px;
     float: left;
     max-height: $navigation-height;
     padding-left: $navigation-padding;
@@ -100,7 +101,7 @@ header.navigation {
   // The nav items
 
   ul li.nav-link {
-    background: $navigation-background;
+    // background: $navigation-background;
     display: block;
     line-height: $navigation-height;
     overflow: hidden;

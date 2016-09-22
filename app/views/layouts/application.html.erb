@@ -5,8 +5,9 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width" />
 </head>
-<body class=<%= browser.device.mobile? ? "touch-device" : "computer" %>>
+<body class=<%= (browser.platform.ios? || browser.platform.android?) ? "touch-device" : "computer" %>>
 
 <%= render "shared/nav" %>
 
