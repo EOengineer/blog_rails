@@ -1,3 +1,23 @@
+// index
+.blog-index {
+  @include screen-control;
+
+  h1 {
+    color: $font-color;
+    text-align: center;
+    font-size: $font-size * 1.5;
+  }
+
+
+  a {
+    @include button;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+}
 
 
 
@@ -26,7 +46,6 @@
   p {
     margin-top: 0px;
     margin-bottom: 0px;
-    // margin-bottom: $base-margin;
   }
 
   code {
