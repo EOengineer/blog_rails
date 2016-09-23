@@ -46,15 +46,21 @@ $navigation-height: 60px;
 
 
 // font related
-$font-size: 1em;
 $font-color: white;
 
 
 // border related
 $base-margin: 30px;
 
-
+  // body defaults
 body {
   @include margin(0);
   background-color: black;
+}
+
+  // site wide headline sizes
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: modular-scale(6 - $i);
+  }
 }

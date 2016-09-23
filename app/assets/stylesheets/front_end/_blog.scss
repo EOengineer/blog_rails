@@ -1,3 +1,5 @@
+
+
 // index
 .blog-index {
   @include screen-control;
@@ -5,7 +7,6 @@
   h1 {
     color: $font-color;
     text-align: center;
-    font-size: $font-size * 1.5;
   }
 
 
@@ -32,13 +33,11 @@
   }
 
   h1 {
-    font-size: $font-size * 1.5;
     margin-top: $base-margin;
     margin-bottom: $base-margin / 2;
   }
 
   h5 {
-    font-size: $font-size * 1.2;
     margin-top: $base-margin * 2;
     margin-bottom: $base-margin;
   }
